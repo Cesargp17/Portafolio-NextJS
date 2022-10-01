@@ -44,7 +44,9 @@ export const PortafolioItem = ({ proyecto }) => {
                 </Link>
             </Card.Footer>
         </Card>
-    </Container><br />
+    </Container><br /><br /><br />
+    <hr />
+    <br /><br /> <br />
     </>
   )
 }

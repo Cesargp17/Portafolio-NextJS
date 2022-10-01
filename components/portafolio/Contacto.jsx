@@ -36,9 +36,8 @@ export const Contacto = () => {
 
   return (
       <>
-        <Text id="contacto" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200}} h1 size={40}>CONTÁCTAME</Text>
-        <Spacer/>
-        <Text css={{ textAlign: 'center' }} size={ 20 } className='texth5' blockquote> Aquí se encuentran mis redes sociales y un formulario <br /> para que me puedas contactar, se aceptan sugerencias y criticas constructivas <br /> todo me ayuda a mejorar
+        <Text id="contacto" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200}} h1 size={30}>CONTÁCTAME</Text>
+        <Text css={{ textAlign: 'center', width: '75%', textJustify: 'auto', margin: 'auto' }} size={ 20 } className='texth5' blockquote> Aquí se encuentran mis redes sociales y un formulario para que me puedas contactar, se aceptan sugerencias y criticas constructivas, todo me ayuda a mejorar.
         mis hábilidades. Espero te haya agradado mi trabajo y podamos trabajar en el proyecto que deseas.</Text>
         <Spacer/>
 
@@ -67,6 +66,9 @@ export const Contacto = () => {
             </Button>
         </form>
         </Grid.Container><br/>
+
+        <br /><br />
+        <hr />
       </>
   )
 }

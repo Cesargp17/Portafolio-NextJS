@@ -36,10 +36,9 @@ const Proyectos = [
 export const Portafolio = () => {
   return (
     <>
-        <Text id="portafolio" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200 }} h1 size={40}>PROYECTOS</Text>
+        <Text id="portafolio" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200 }} h1 size={30}>PROYECTOS</Text>
+        <Text css={{ textAlign: 'center', width: '75%', textJustify: 'auto', margin: 'auto' }} className='texth5' size={ 20 } blockquote> Estos son algúnos de los proyectos que he realizado, Todos los días realizo nuevos proyectos para mejorar mis habilidades como desarrollador. Mi GitHub siempre esta publico para que puedan ver todos mis proyectos terminados y los que aún están en desarrollo.</Text>
             <Spacer/>
-        <Text css={{ textAlign: 'center' }} className='texth5' size={ 20 } blockquote> Estos son algúnos de los proyectos que he realizado <br /> Todos los días realizo nuevos proyectos para mejorar mis habilidades como desarrollador. <br/>Mi GitHub siempre esta publico para que puedan ver todos mis proyectos terminados y los que aún están en desarrollo.</Text>
-            <Spacer/><Spacer/>
                 {
                     Proyectos.map( proyecto => (
                         <PortafolioItem proyecto={ proyecto } key={ proyecto.id } />

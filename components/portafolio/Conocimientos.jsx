@@ -5,9 +5,9 @@ import { CardItem } from './CardItem'
 export const Conocimientos = () => {
   return (
     <>
-    <Text id="conocimientos" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200 }} h1 size={40}>CONOCIMIENTOS</Text>
+    <Text id="conocimientos" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200 }} h1 size={30}>CONOCIMIENTOS</Text>
     <Spacer/>
-    <Text  className='texth5' css={{ textAlign: 'center' }} size={ 20 } blockquote> Actualmente cuento con sólidos conocimientos <br /> en las siguientes técnologias y todos los dias, <br /> me esfuerzo en aprender nuevas cosas que me ayuden a mejorar. </Text>
+    <Text  className='texth5' css={{ textAlign: 'center', width: '75%', textJustify: 'auto', margin: 'auto' }} size={ 20 } blockquote> Actualmente cuento con sólidos conocimientos en las siguientes técnologias y todos los dias me esfuerzo en aprender nuevas cosas que me ayuden a mejorar. </Text>
     <Spacer/>
 
     <Grid.Container gap={ 2 } justify='center'>
@@ -27,6 +27,9 @@ export const Conocimientos = () => {
         <CardItem src='https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' alt='GitLogo' />
         <CardItem src='https://blog.artegrafico.net/wp-content/uploads/2019/10/mysql-logo.png' alt='MysqlLogo' />
     </Grid.Container>
+
+    <br /><br />
+    <hr />
     </>
   )
 }

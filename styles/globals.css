@@ -56,3 +56,14 @@
    .texth5{
     font-family: 'Roboto Mono';
    }
+
+   hr{
+    display:block;
+    margin:0 auto;
+    height:15px;
+    width:200px;
+    border:none;
+    border-radius: 3px;
+    border-right:200px solid orange;
+  }
+  
