@@ -37,16 +37,16 @@ export const Contacto = () => {
   return (
       <>
         <Text id="contacto" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200}} h1 size={30}>CONTÁCTAME</Text>
-        <Text css={{ textAlign: 'center', width: '75%', textJustify: 'auto', margin: 'auto' }} size={ 20 } className='texth5' blockquote> Aquí se encuentran mis redes sociales y un formulario para que me puedas contactar, se aceptan sugerencias y criticas constructivas, todo me ayuda a mejorar.
+        <Text css={{ textAlign: 'center', width: '90%', textJustify: 'auto', margin: 'auto' }} size={ 20 } className='texth5' blockquote> Aquí se encuentran mis redes sociales y un formulario para que me puedas contactar, se aceptan sugerencias y criticas constructivas, todo me ayuda a mejorar.
         mis hábilidades. Espero te haya agradado mi trabajo y podamos trabajar en el proyecto que deseas.</Text>
         <Spacer/>
 
         <Grid.Container gap={ 2 } justify='center'>
-            <CardItem src='https://cdn-icons-png.flaticon.com/512/5968/5968896.png' alt='gittLogo' href='https://github.com/Cesargp17' width={ 70 } />
-            <CardItem src='https://www.facebook.com/images/fb_icon_325x325.png' alt='fbLogo' href='https://www.facebook.com/cesar.garcia.p.17/' width={ 70 } />
-            <CardItem src='https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg' alt='igLogo' href='https://www.instagram.com/cesargp17/' width={ 70 } />
-            <CardItem src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png' alt='waLogo' href='https://api.whatsapp.com/send?phone=+523271023398&text=Hola, Nececito informacion sobre sus servicios en desarrollo web!' width={ 70 } />
-            <CardItem src='https://cdn-icons-png.flaticon.com/512/281/281769.png' alt='gmailLogo' href="mailto:asgarper11@gmail.com" width={ 70 } />
+            <CardItem src='https://cdn-icons-png.flaticon.com/512/5968/5968896.png' alt='gittLogo' href='https://github.com/Cesargp17' width={ 60 } />
+            <CardItem src='https://www.facebook.com/images/fb_icon_325x325.png' alt='fbLogo' href='https://www.facebook.com/cesar.garcia.p.17/' width={ 60 } />
+            <CardItem src='https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg' alt='igLogo' href='https://www.instagram.com/cesargp17/' width={ 60 } />
+            <CardItem src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png' alt='waLogo' href='https://api.whatsapp.com/send?phone=+523271023398&text=Hola, Nececito informacion sobre sus servicios en desarrollo web!' width={ 60 } />
+            <CardItem src='https://cdn-icons-png.flaticon.com/512/281/281769.png' alt='gmailLogo' href="mailto:asgarper11@gmail.com" width={ 60 } />
         </Grid.Container>
 
         <Grid.Container justify='center' css={{ mt: 20 }}>

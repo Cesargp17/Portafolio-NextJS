@@ -1,7 +1,7 @@
 import { Card, Container, Grid, Link, Text } from '@nextui-org/react'
 import React from 'react'
 
-export const PortafolioItem = ({ proyecto }) => {
+export const PortafolioItem = ({ proyecto, width = '400' }) => {
   return (
     <>
     <Container className="animate__animated animate__fadeIn" display='flex' justify='center' alignContent='center' >
@@ -9,7 +9,7 @@ export const PortafolioItem = ({ proyecto }) => {
             <Card isHoverable isPressable css={{ mw: "400px", height: 400 }}>
                     <Card.Image
                         src={ proyecto.img }
-                        width={ 400 }
+                        width={ width }
                         height={ 400 }
                         alt={proyecto.alt }
                         />
