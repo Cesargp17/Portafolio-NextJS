@@ -37,11 +37,11 @@ export const NavbarComponent = () => {
           hideIn="xs"
           variant="highlight"
         >
-          <Navbar.Link href="#">Inicio</Navbar.Link>
-          <Navbar.Link href="#about">Sobre mí</Navbar.Link>
-          <Navbar.Link href="#conocimientos">Conocimientos</Navbar.Link>
-          <Navbar.Link href="#portafolio">Portafolio</Navbar.Link>
-          <Navbar.Link href="#contacto">Contácto</Navbar.Link>
+          <Navbar.Link href="#"><Text weight="semibold" h4 css={{ marginTop: 30 }}>Inicio</Text></Navbar.Link>
+          <Navbar.Link href="#about"><Text weight="semibold" h4 css={{ marginTop: 30 }}>Sobre mí</Text></Navbar.Link>
+          <Navbar.Link href="#conocimientos"><Text weight="semibold" h4 css={{ marginTop: 30 }}>Conocimientos</Text></Navbar.Link>
+          <Navbar.Link href="#portafolio"><Text weight="semibold" h4 css={{ marginTop: 30 }}>Portafolio</Text></Navbar.Link>
+          <Navbar.Link href="#contacto"><Text weight="semibold" h4 css={{ marginTop: 30 }}>Contácto</Text></Navbar.Link>
         </Navbar.Content>
         <Navbar.Content
           css={{
@@ -71,7 +71,9 @@ export const NavbarComponent = () => {
                 color="inherit"
                 href={item.href}
               >
+                <Text weight="semibold" h4>
                 {item.name}
+                </Text>
               </Link>
             </Navbar.CollapseItem>
           ))}

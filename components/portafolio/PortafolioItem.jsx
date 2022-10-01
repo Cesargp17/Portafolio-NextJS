@@ -6,7 +6,7 @@ export const PortafolioItem = ({ proyecto, width = '400' }) => {
     <>
     <Container className="animate__animated animate__fadeIn" display='flex' justify='center' alignContent='center' >
         <Link href={ proyecto.link }>
-            <Card isHoverable isPressable css={{ mw: "400px", height: 400 }}>
+            <Card isHoverable isPressable css={{ mw: "400px", height: 350 }}>
                     <Card.Image
                         src={ proyecto.img }
                         width={ width }
