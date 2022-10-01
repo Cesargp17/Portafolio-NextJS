@@ -4,7 +4,7 @@ import React from 'react'
 export const About = () => {
   return (
     <>
-        <Text id="about" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200, mb: 100}} h1 size={40}>SOBRE MÍ</Text>
+        <Text id="about" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200}} h1 size={40}>SOBRE MÍ</Text>
 
         <Container className="animate__animated animate__fadeIn" display='flex' justify='center' alignContent='center' height='100vh' >
         <Link>
