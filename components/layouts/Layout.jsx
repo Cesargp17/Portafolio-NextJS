@@ -1,14 +1,20 @@
 import { NextUIProvider } from '@nextui-org/react'
 import Head from 'next/head'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { UIContext } from '../../context/UIContext'
 import { NavbarComponent } from '../ui/NavbarComponent'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const origin = typeof window == 'undefined' ? '' : window.location.origin;
 
 const Layout = ({ children }) => {
 
   const { Theme } = useContext( UIContext );
+
+  useEffect(() => {
+    AOS.init()
+}, [])
 
   return (
     <NextUIProvider theme={ Theme }>

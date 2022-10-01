@@ -3,10 +3,11 @@ import React, { useState } from 'react'
 import { CardItem } from './CardItem'
 import { send } from 'emailjs-com';
 import { useForm } from '../../hooks/useForm';
+import Swal from 'sweetalert2'
 
 export const Contacto = () => {
 
-    const { nombre, email, telefono, asunto, message, onInputChange } = useForm({
+    const { nombre, email, telefono, asunto, message, onInputChange, onResetForm } = useForm({
         nombre: '', email: '', telefono: '', asunto: '', message: ''
     });
 
@@ -28,14 +29,29 @@ export const Contacto = () => {
             'FUBtN15nUF8CSTjQ8'
           )
             .then((response) => {
+              Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Mensaje enviado, muchas gracias.',
+                showConfirmButton: false,
+                timer: 1500
+              })
+              onResetForm();
             })
             .catch((err) => {
-              console.log('FAILED...', err);
+              Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Hubo un error, intente más tarde.',
+                showConfirmButton: false,
+                timer: 1500
+              })
+              onResetForm();
             })
     }
 
   return (
-      <>
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
         <Text id="contacto" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200}} h1 size={30}>CONTÁCTAME</Text>
         <Text css={{ textAlign: 'center', width: '90%', textJustify: 'auto', margin: 'auto' }} size={ 20 } className='texth5' blockquote> Aquí se encuentran mis redes sociales y un formulario para que me puedas contactar, se aceptan sugerencias y criticas constructivas, todo me ayuda a mejorar.
         mis hábilidades. Espero te haya agradado mi trabajo y podamos trabajar en el proyecto que deseas.</Text>
@@ -69,7 +85,7 @@ export const Contacto = () => {
 
         <br /><br />
         <hr />
-      </>
+      </div>
   )
 }
 

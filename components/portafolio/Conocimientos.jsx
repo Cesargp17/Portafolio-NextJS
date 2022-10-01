@@ -4,7 +4,7 @@ import { CardItem } from './CardItem'
 
 export const Conocimientos = () => {
   return (
-    <>
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
     <Text id="conocimientos" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200 }} h1 size={30}>CONOCIMIENTOS</Text>
     <Spacer/>
     <Text  className='texth5' css={{ textAlign: 'center', width: '90%', textJustify: 'auto', margin: 'auto' }} size={ 20 } blockquote> Actualmente cuento con sólidos conocimientos en las siguientes técnologias y todos los dias me esfuerzo en aprender nuevas cosas que me ayuden a mejorar. </Text>
@@ -30,6 +30,6 @@ export const Conocimientos = () => {
 
     <br /><br />
     <hr />
-    </>
+    </div>
   )
 }

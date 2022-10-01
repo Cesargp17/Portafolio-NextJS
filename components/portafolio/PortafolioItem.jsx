@@ -1,9 +1,13 @@
 import { Card, Container, Grid, Link, Text } from '@nextui-org/react'
 import React from 'react'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 export const PortafolioItem = ({ proyecto, width = '400' }) => {
+
+    const { isMobile } = useIsMobile();
+
   return (
-    <>
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
     <Container className="animate__animated animate__fadeIn" display='flex' justify='center' alignContent='center' >
         <Link href={ proyecto.link }>
             <Card isHoverable isPressable css={{ mw: "400px", height: 350 }}>
@@ -16,7 +20,7 @@ export const PortafolioItem = ({ proyecto, width = '400' }) => {
             </Card>
         </Link>
 
-        <Card css={{ p: "$6", mw: "500px", height: 310, marginLeft: -50, marginTop: 20 }}>
+        <Card css={{ p: "$6", mw: "500px", height: 310, marginLeft: `{ ${ isMobile ? 0 : -50} }`, marginTop: 20 }}>
             <Card.Header>
             <Grid.Container css={{ pl: "$6" }}>
                 <Grid xs={12}>
@@ -47,6 +51,6 @@ export const PortafolioItem = ({ proyecto, width = '400' }) => {
     </Container><br /><br /><br />
     <hr />
     <br /><br /> <br />
-    </>
+    </div>
   )
 }

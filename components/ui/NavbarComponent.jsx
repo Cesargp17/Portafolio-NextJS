@@ -62,7 +62,7 @@ export const NavbarComponent = () => {
 
             </Navbar.Item>
         </Navbar.Content>
-        <Navbar.Collapse disableAnimation>
+        <Navbar.Collapse css={{ width: 250 }}>
           {collapseItems.map((item) => (
             <Navbar.CollapseItem
               key={item.id}

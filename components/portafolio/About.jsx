@@ -3,10 +3,10 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <>
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
         <Text id="about" css={{ textGradient: "45deg, $blue600 -20%, $blue800 100%", textAlign: 'center', mt: 200}} h1 size={30}>SOBRE MÍ</Text>
 
-        <Container className="animate__animated animate__fadeIn" display='flex' justify='center' alignContent='center' height='100vh' >
+        <Container display='flex' justify='center' alignContent='center' height='100vh' >
         <Link>
             <Card isHoverable isPressable css={{ mw: "400px", height: 400 }}>
                     <Card.Image
@@ -40,6 +40,6 @@ export const About = () => {
         </Card>
     </Container><br /><br />
     <hr />
-    </>
+    </div>
   )
 }
